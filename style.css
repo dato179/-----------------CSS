@@ -1,0 +1,155 @@
+/* საერთო სტილები */
+body {
+    margin: 0;
+    background-color: #fffaf2;
+    color: #474747;
+    font-family: Arial, sans-serif;
+}
+
+/* ჰედერი */
+header {
+    padding: 18px 15px;
+    text-align: center;
+    background-color: #904d35;
+}
+
+header h1 {
+    margin: 0 0 12px;
+    font-size: 32px;
+    color: white;
+}
+
+/* მენიუ */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+nav a {
+    padding: 8px 12px;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #f1c8a3;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #f1c8a3;
+    color: #743f2b;
+}
+
+@media (max-width: 700px) {
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+}
+
+/* მთავარი ნაწილი */
+.hero {
+    min-height: 300px;
+    padding: 60px 20px;
+    text-align: center;
+    background:
+        linear-gradient(rgba(70, 40, 25, 0.55), rgba(70, 40, 25, 0.55)),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #743f2b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.menu-section,
+.about,
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 220px;
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h3,
+.card p,
+.card b {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.card b {
+    display: block;
+    margin-bottom: 15px;
+    color: #743f2b;
+}
+
+.about {
+    background-color: #f2eadc;
+}
+
+.contact {
+    background-color: #743f2b;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+}
+
+/* ფუთერი */
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #884d4d;
+}
+/* ფონტები */
+@font-face {
+    font-family: "MyFont";
+    src: url("fonts/noto.sansgeorgian-regular.ttf");
+}
+body{font-family: "MyFont", sans-serif;}
+
+
+
+.white {
+    color: white;
+}
